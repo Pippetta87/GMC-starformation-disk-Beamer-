@@ -1,0 +1,127 @@
+\section{todo: gmc}
+
+\begin{wordonframe}{studio/approfondisco fromazione stellare instabilit\'a e disco polvere}
+Mckee ostriker 07: Turnbulence-Kolmogorov(incompressible flows),network of overlapping shocks (burgers flow, frisch bec 2001); incompressible MHD turbulence: critically balanced anisotropic cascade; physical scales in turbulent flow; density structure imposed by turbulence; self-gravity(!); magnetic fields; physical state of GMc; core mass function and IMF; low mass stars; disks and winds
+\end{wordonframe}
+
+\section{GMC: turbolenza e campi magnetici}\linkdest{sec:turbmagn}
+
+\subsection{Kolmogorov theory}
+
+\begin{frame}{Spatial correlation of velocity and magnetic field}
+
+\end{frame}
+
+\section{Formazione stellare: stabilit\'a}\linkdest{sec:stability}
+
+\subsection{Fase isoterma}
+
+\begin{frame}{Collasso nube inter-stellare}
+\begin{block}{Condizione di collasso}
+Prima fase: collasso isotermo.
+\begin{columns}
+\begin{column}{0.5\textwidth}
+$\TtwoDy{t}{I}<0$ quindi $E_T+U<0$.
+\end{column}
+\begin{column}{0.5\textwidth}
+Nube di $H_2$ a $T=\SI{10}{\kelvin}$:
+$\rho>\num{e-18}(\frac{M}{\msun{}})^{-2}$\si{\gram\per\cubic\cm}
+\end{column}
+\end{columns}
+\begin{block}{Nubi giganti: addensamenti}
+Turbolenza crea zone pi\'u dense: Mckee ostriker 07, Folin i 14, bertelli Motta 16.
+\end{block}
+\begin{block}{Rotazione}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+T,M,J costanti:
+\begin{align*}
+&E_{th}\approx c'\\
+&E_{Rot}\approx c''\rho\expy{\frac{2}{3}}\\
+&U\approx c'''\rho\expy{\frac{1}{3}}\\
+&\alpha=\frac{E_{th}}{U},\ \beta=\frac{E_{rot}}{U}
+\end{align*}
+\end{column}
+\begin{column}{0.5\textwidth}
+Condizione di collasso proibito: $16\alpha(\rho_0)\beta(\rho_0))>1$
+\end{column}
+\end{columns}
+\end{block}
+\end{block}
+\end{frame}
+
+\begin{wordonframe}{Collasso nube inter-stellare}\tolbf
+\begin{block}{Teorema viriale:todo}\end{block}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+T,M,J costanti:
+\begin{align*}
+&E_{th}\approx c'\\
+&E_{Rot}\approx\frac{1}{2}\frac{J^2}{I}=\frac{J^2}{2}\frac{1}{\frac{2}{5}MR^2}=c''\rho\expy{\frac{2}{3}}\\
+&U\approx\frac{3}{5}\frac{GM^2}{R}=c'''\rho\expy{\frac{1}{3}}
+\end{align*}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{align*}
+&f(\psi=\frac{\rho}{\rho_0})=\alpha_0\psi\expy{-\frac{1}{3}}+\beta_0\psi\expy{\frac{1}{3}}\\
+&\begin{pmatrix}
+&f<\frac{1}{2}: \text{collasso}\\
+&f>\frac{1}{2}: \text{espansione}\\
+\end{pmatrix}\\
+&\alpha=\alpha_0(\rho_0)(\frac{\rho}{\rho_0})\expy{-\frac{1}{3}}\\
+&\beta=\beta(\rho_0)(\frac{\rho}{\rho_0})\expy{\frac{1}{3}}
+\end{align*}
+\end{column}
+\end{columns}
+f ha minimo in $\psi_0=(\frac{\alpha_0}{\beta_0\beta_0})\expy{\frac{3}{2}}$
+\end{wordonframe}
+
+\subsection{Fase adiabatica}
+
+\begin{frame}{Inizio fase adiabatica: aumento temperatura}
+\begin{block}{Aumento cammino ottico}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+Cammino ottico di un fotone minore delle dimensioni della nube: $\kappa\rho R>1$.
+\end{column}
+\begin{column}{0.5\textwidth}
+Densit\'a che consente aumento T: $\rho_{ad}\propto M\expy{-\frac{1}{3}}?$
+\end{column}
+\end{columns}
+\end{block}
+\begin{block}{Termine collasso adiabatico ($\Delta E_T=-\Delta U$)}
+Equilibrio: $E_T^{ad}+\Delta E_T=\frac{1}{2}|U+\Delta U|$: $\Delta R=-\frac{R}{2}$ e $\rho'=8\rho_{ad}$.
+\end{block}
+\begin{block}{Comportamento pseudo-adiabatico: $P\propto\rho\expy{\gamma}$}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{align*}
+&T=T_0(\frac{\rho}{\rho_{ad}})\expy{\gamma-1}\\
+&P=P_0(\frac{\rho}{\rho_{ad}})\expy{\gamma}
+\end{align*}
+\end{column}
+\begin{column}{0.5\textwidth}
+$\gamma>\frac{4}{3}$: $\alpha$ diventa $>\frac{1}{2}$
+\end{column}
+\end{columns}
+Condizione di equilibrio: $\rho_{eq}\propto M\expy{\theta}\begin{pmatrix}
+\approx\num{e-10}, \gamma=\frac{5}{3}\\
+\approx\num{e6}, \gamma=\frac{7}{5}
+\end{pmatrix}$.
+\end{block}
+$T>\SI{e3}{\kelvin}$: dissociazione molecolare, ionizzazione.
+Zona centrale raggiunge stato di quasi-equilibrio: lenta contrazione.
+\end{frame}
+
+\begin{wordonframe}{Fase adiabatica}
+$P\propto\rho\expy{\gamma}$: corrisponde a vera adiabatica  se condizione iniziale di equilibrio o qe.
+
+Condizione di equilibrio: $kT_0(\frac{\rho_{eq}}{\rho_{ad}})\expy{\gamma-1}=\const M\expy{\frac{2}{3}}\rho_{eq}\expy{\frac{1}{3}}$.
+
+''Solo se la temperatura aumenta rapidamente con densit\'a \'e possibile ristabilire equilibrio.''
+
+Ionizzazione e dissociazione rallentano aumento di T e P: accelerazione collasso.
+
+Quando la zona interna raggiunge l'equilibrio l'esterno continua a contrarsi: rimbalzi.
+
+\end{wordonframe}
