@@ -75,8 +75,6 @@
 % Let's get started
 \begin{document}
 
-\input{tikzdir}%%contain tikz files as filecontents
-
 \addtobeamertemplate{block begin}{\setlength\abovedisplayskip{2pt}\setlength\belowdisplayskip{2pt}\setlength\abovedisplayshortskip{2pt}\setlength\belowdisplayshortskip{2pt}}
 
 \addtobeamertemplate{block begin}{\vspace*{-3pt}}{}
@@ -91,7 +89,7 @@
 % and table of contents.
 %\frame{\tableofcontents[onlyparts]}
 
-\begin{frame}[allowframebreaks]{Sistemi planetari: formazione sistemi planetari, evoluzione dinamica e collisionale.}\phantomsection\linkdest{intro}
+\begin{frame}[allowframebreaks]{Indice}\phantomsection\linkdest{intro}
 \tableofcontents[onlyparts]
 \end{frame}
 
@@ -120,8 +118,8 @@ Lifetime (richert 18: circumstellar disk lifetimes in numerous young stellar clu
 \end{column}  \end{columns}
 \end{wordonframe}
 
-\part{GMC e formazione stellare}\linkdest{GMC}
-\input{starformation}
+\part{GMC e formazione stellare}\linkdest{part:GMC}
+%\input{starformation}
 
 \part{Accrescimento e dischi protoplanetarii}\linkdest{part:accretionanddisks}
 \input{disks}
