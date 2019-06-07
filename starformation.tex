@@ -9,7 +9,33 @@ Mckee ostriker 07: Turnbulence-Kolmogorov(incompressible flows),network of overl
 \subsection{Kolmogorov theory}
 
 \begin{frame}{Spatial correlation of velocity and magnetic field}
+\begin{block}{autocorrelation function, structure function and power spectra}
+$S_p(\vec{r})=\exv{|\vec{v}(\vec{x})-\vec{v}(\vec{x})|^p}$: RMS velocity difference is $\Delta v(\vec{r})=\sqrt{S_2(\vec{r})}$, autocorrelation is $A(\vec{r})=\exv{\vec{v}(\vec{x})\cdot\vec{v}(\vec{x}+\vec{r})}$; lo spettro di potenza \'e FT di $A(\vec{r})$: $P(\vec{k})=|\vec{v}(\vec{k})|^2$, for zero mean velocity the velocity dispersion averaged over volume $l^3$ is $\sigma_v(l)^2=\int_{k_{min}}^{\infty}P(\vec{k})$ with $k_{min}=2\pi/l$
+\end{block}
+\begin{block}{Structure function, correlation function and power spectra}
+magnetic field, and other fluid variables.
+\end{block}
+\end{frame}
 
+\begin{frame}{Kolmogorov turbulence}
+\begin{block}{Isotropy: $\vec{r}\to r$, $\vec{k}\to k$, $\vec{v}(\vec{k})\to v(l)=\delta v(l)$}
+\begin{columns}[T]\begin{column}{0.5\textwidth}
+$P(k)\propto k\expy{-n}$ (3D), $n'=n-2$ (1D angle-averaged)
+\end{column}\begin{column}{0.5\textwidth}
+$v(l)\propto\sigma_v(l)\propto\Delta  v(l)\propto l^q$, $q=(n-3)/2$
+\end{column}\end{columns}
+1D velocity dispersion along LOS is related to 3D velocity dispersion: $\sigma=\sigma_v(l)/\sqrt{3}$.
+\end{frame}
+
+\begin{frame}{Kolmogorov theory}
+\begin{columns}[T]\begin{column}{0.5\textwidth}
+\begin{block}{Incompressible flow}
+$\sigma_v\ll\sigma_{th}=(P_{th}/\rho)\expy{1/2}$
+\end{block}
+\end{column}\begin{column}{0.5\textwidth}
+Energy is dissipated and turbulent motions are damped for scales smaller than Reynolds scale $l_{\nu}$: viscous term $\approx\nu v(l)/l^2$ exceeds nonlinear coupling terms between scalea $v(l)^2/l$
+\end{column}\end{columns}
+\end{block}
 \end{frame}
 
 \section{Formazione stellare: stabilit\'a}\linkdest{sec:stability}
