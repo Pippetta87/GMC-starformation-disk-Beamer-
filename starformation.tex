@@ -1,9 +1,3 @@
-\section{todo: gmc}
-
-\begin{wordonframe}{studio/approfondisco fromazione stellare instabilit\'a e disco polvere}
-Mckee ostriker 07: Turnbulence-Kolmogorov(incompressible flows),network of overlapping shocks (burgers flow, frisch bec 2001); incompressible MHD turbulence: critically balanced anisotropic cascade; physical scales in turbulent flow; density structure imposed by turbulence; self-gravity(!); magnetic fields; physical state of GMc; core mass function and IMF; low mass stars; disks and winds
-\end{wordonframe}
-
 \section{GMC: turbolenza e campi magnetici}\linkdest{sec:turbmagn}
 
 \subsection{Kolmogorov theory}
@@ -57,7 +51,6 @@ Specific energy dissipation rate $\dot{\mathcal{E}}=\epsilon U^3/l_0$, $E=U^2/2$
 \end{frame}
 
 \begin{frame}{Physical scales in GMC}
-\begin{columns}[T]\begin{column}{0.5\textwidth}
 classical incompressible turbulence: outer $l_0$ and inner Reynolds scale $l_{\nu}$. Assuming Kolmogorov scaling $v(l)=v(l_0)(\frac{l}{l_0})\expy{1/3}$ dissipation scale
 \[\frac{l_{\nu}}{l_0}=[\frac{\nu}{l_0v(l_0)}]\expy{3/4}=Re\expy{-3/4}\]
 Mean free path for particles collision $\nu=c_s\lambda_{mfp}$:
@@ -66,7 +59,9 @@ q closer to $1/2$ on large scale than $1/3$: supersonic compressible turbulence.
 If $v(l_s)=c_s$: $\lambda_{mfp}\approx\SI{e13}{\cm}$, $l_s\approx\SI{0.03}{\pc}$, $l_{\nu}\approx\SI{3e-5}{\pc}$: density perturbation in non magnetic GMC with characteristic lenght $l_s$ will have order unity amplitude.
 \end{column}\begin{column}{0.5\textwidth}
 Flow along magnitic field will be as for unmagnetized medium, flow orthogonal to magnetic field will create order-unity density perturbation if  $v>\sqrt{c_s^2+v^2}$.
+\end{frame}
 
+\begin{frame}{Physical scales in GMC: with magnetic field}
 MHD turbulence in fully ionized gas: below resistive scale Ohmic diffusion smooth out strong bends in magnetic field, allows folded lines to reconnect: magnetic induction equation, diffusion term $\eta B(l)/(4\pi l^2)=v(l)B(l)/l$ flux dragging term.
 Weakly ionized medium: ambipolar diffusion (ion-neutral drift) becomes important before resistive scale is reached - smallest scale at which magnetic field is well coupled to bulk of gas: ion-neutral drift speed $B_0\delta B(m_i+m)/(4\pi\rho_i\rho\alpha_{in}l)=\delta v\approx\delta B/(4\pi\rho)$ turbulent velocity, $\alpha_{in}=\exv{\sigma_{in}|v_i-v_n|}\approx\SI{2e-9}{\cubic\cm\per\second}$
 \[l_{AD}=\frac{v_A}{n_i\alpha_{in}}\approx\SI{0.5}{\pc}(\frac{v_A}{\SI{3}{\kilo\meter\per\second}})(\frac{n_i}{\SI{e-3}{\per\cubic\cm}})\expy{-1}.
