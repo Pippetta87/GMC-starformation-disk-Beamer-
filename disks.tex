@@ -1,1 +1,24 @@
-%
+\section{Protoplanetary disk}
+
+\begin{wordonframe}{Enhanced viscosity}
+PRINGLE 1981:
+Armitage - 
+\end{wordonframe}
+
+\begin{frame}{Diffusive evolution equation}
+\begin{columns}[T]\begin{column}{0.5\textwidth}
+conervation of flow and angular momentum:
+\begin{align*}
+&r\PDy{t}{\Sigma}+\PDof{r}(r\Sigma v_r)=0\\
+&r\PDY{t}{(Sigma r^2\Omega)}+\PDof{r}(r\Sigma v_r*r^2\Omega)=\frac{1}{2\pi}\PDy{r}{G}\\
+&G=2\pi r*\nu\Sigma r\TDy{r}{\Omega}*r
+\end{align*}
+product of circumference, viscous force per unit length, level arm.
+\end{column}\begin{column}{0.5\textwidth}
+Kelperian potential $\Omega\proptor\expy{-3/2}$, evolution equation for  surface density of thin accretion disk:
+\[\PDy{t}{\Sigma}=\frac{3}{r}\PDof{r}[r\expy{1/2}\PDof{r}(\nu\Sigma r\expy{1/2})]\]
+\end{column}\end{columns}
+Diffusion equation: $X=2r\expy{1/2}$, $f=\frac{3}{2}\Sigma X$:
+\[\PDy{t}{f}=D\PtwoDy{X}{f},\quad D=\frac{12\nu}{X^2}\]
+Diffusion timescale: $\tau=X^2/D\approx\frac{r^2}{\nu}$
+\end{frame}
