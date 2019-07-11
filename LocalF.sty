@@ -62,3 +62,37 @@
   \draw[name path=#3,current plane] (\angVis:1) arc (\angVis:-\angVis-180:1);
   \draw[name path=dashed#3,current plane,dashed] (180-\angVis:1) arc (180-\angVis:\angVis:1);
 }
+
+%%% COUNTERS
+\newcounter{cherrykey}%conta le keyword totali per auto ref
+\newcounter{cherrysectionlist}% conta le key prima di keywordlist
+
+\newcommand\headinginfo[1]{%
+  \addcontentsline{key-\thecherrysectionlist}{heading}{{#1}}%
+  \addtocontents{key-\thecherrysectionlist}{\vspace{5pt}}}
+%% expert approach to keywords
+ \makeatletter
+\newcommand\keyword[2][target-\thecherrykey]{%
+\addtocounter{cherrykey}{1}
+\noindent{%
+\color{keyword}{#2}%
+}%
+\phantomsection% comment out if hyperref is not used
+  \linkdest{#1}%
+\addcontentsline{key-\thecherrysectionlist}{subsubsection}{\textbullet\protect\hyperlink{#1}{#2}}%
+}
+\makeatother
+  
+\makeatletter
+\newcommand{\listofkeywordsbasic}{%
+  \@starttocorig{key-\thecherrysectionlist}
+}
+
+\newcommand\listkeywordsname{KEYWORDS}
+\newcommand\listofkeywords{%
+\subsubsection{\listkeywordsname}\listofkeywordsbasic}
+%%frameintoc
+\newcommand\frameintoc{%
+%\subsubsection{\insertframetitle}
+\addcontentsline{lbf}{section}{\protect\makebox[2em][l]{\insertframenumber\hfill}\insertframetitle\par}%
+}

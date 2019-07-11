@@ -68,6 +68,11 @@
 %\addtolength\belowdisplayshortskip{-1\baselineskip}%
 %}
 
+\AtBeginSection{
+\addtocounter{cherrysectionlist}{1}
+\frame{\sectionpage}
+}
+
 \makeatletter
 \AtBeginPart{%
 \frame{\partpage}
@@ -121,5 +126,4 @@
 \addtocontents{toc}{\protect\beamer@partintoc{\the\c@part}{\beamer@partnameshort}{\the\c@page}}%
 }
 \makeatother
-\AtBeginSection{\frame{\sectionpage}}
 \AtBeginSubsection{\frame{\subsectionpage}}
