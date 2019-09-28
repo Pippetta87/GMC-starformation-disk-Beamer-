@@ -1,44 +1,46 @@
-\section{From proto-star to Pre-MS}
+\section{From GMC to Pre-MS}
 
-\subsection{Isothermal phase}
+\subsection{Isothermal (approx) phase}
 
 \begin{frame}{Jeans instability in isothermal pressure supported cloud}
-Jeans stability for molecular clouds: clouds not collapsing: thermal pressure/ interstellar magnetic field (large scale); \keyword{hydrostatic equilibrium for isothermal sphere}: (first approx for dense core/Bok globule: mechanical support from MHD waves diminish at this smaller scales)
-\begin{columns}[T]\begin{column}{0.5\textwidth}
+\begin{columns}\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item Jeans stability for molecular clouds: clouds not collapsing: thermal pressure/ interstellar magnetic field (large scale); \keyword{hydrostatic equilibrium for isothermal sphere}: (first approx for dense core/Bok globule: mechanical support from MHD waves diminish at this smaller scales)
+\end{itemize}
+\end{column}\begin{column}{0.5\textwidth}
 \begin{align*}
 &-\frac{1}{\rho}\nabla P-\nabla \phi=0\\
 &P=\rho\frac{RT}{\mu}\\
 &\nabla^2\phi=4\pi G\rho
 \end{align*}
-\end{column}\begin{column}{0.5\textwidth}
-$\ln{\rho}+\phi/c_s^2$ spatial constant: spherical case
+$\ln{\rho}+\phi/c_s^2$ spatial constant (spherical case):
 \begin{equation*}
 \rho(r)=\rho_c\Exp{-\phi/c_s^2}
 \end{equation*}
 \end{column}\end{columns}
 \end{frame}
  
-\begin{frame}{Stability of isothermal poly}
-\begin{columns}[T]\begin{column}{0.5\textwidth}
-\keyword{Gravitational stability using polytropes}:
+\begin{frame}{Isothermal Lane-Emden equation: \keyword{Gravitational stability using polytropes}}
+\begin{columns}\begin{column}{0.5\textwidth}
 \begin{align*}
 &\frac{1}{r^2}\TDof{r}(r^2\TDy{r}{\phi})=4\pi G\rho=4\pi G\rho_c\exp{-\phi/c_s^2}\\
+&\xi=\sqrt{\frac{4\pi G\rho_c}{c_s^2}}r,\ \psi=\frac{\phi}{c_s^2}\\
 &\frac{1}{\xi^2}\TDof{\xi}(\xi^2\TDy{\xi}{\psi})=\exp{-\psi}\\
-&\xi=\sqrt{\frac{4\pi G\rho_c}{c_s^2}}r,\ \psi=\frac{\phi}{c_s^2}
-\end{align*}
-\end{column}\begin{column}{0.5\textwidth}
-\begin{align*}
-&M=4\pi\int_0^{r_0}\rho r^2\,dr\\
-&=4\pi\rho_c(\frac{c_s^2}{4\pi G\rho_c})\expy{3/2}\int_0^{\xi_0}\exp{-\psi}\xi^2\,d\xi\\
+&M=4\pi\int_0^{r_0}\rho r^2\,dr=4\pi\rho_c(\frac{c_s^2}{4\pi G\rho_c})\expy{3/2}\int_0^{\xi_0}\exp{-\psi}\xi^2\,d\xi\\
 &m=\frac{P_0\expy{1/2}G\expy{3/2}M}{c_s^4}=(4\pi\frac{\rho_c}{\rho_0})\expy{-1/2}(\xi^2\PDy{\xi}{\psi})_{\xi_0}
 \end{align*}
-\end{column}\end{columns}
-\begin{figure}
-\includegraphics[trim={0cm 0cm 0 0},clip, keepaspectratio,width=0.45\textwidth]{polyadimprofile}
-\includegraphics[trim={0cm 0 0 0},clip,width=0.45\textwidth]{polyadimmassvsdcontr}
+\end{column}\begin{column}{0.5\textwidth}
+\begin{figure}[!ht]
+\centering
+\includegraphics[trim={0cm 0cm 0 0},clip, keepaspectratio,width=0.99\textwidth]{polyadimprofile}
+\includegraphics[trim={0cm 0 0 0},clip,width=0.99\textwidth]{polyadimmassvsdcontr}
 \end{figure}
+\end{column}\end{columns}
+\begin{itemize}
+\item Large distance $\xi\gg1$: $\frac{\rho}{\rho_c}\to\frac{2}{\xi^2}$
+\end{itemize}
 \end{frame}
-
+ 
 \begin{wordonframe}{Radius as function of external pressure}
 For small $\xi$ $\psi(\xi)\approx\frac{\xi^2}{6}+O(\xi^4)$:
 \begin{equation*}
@@ -281,3 +283,18 @@ Ionizzazione e dissociazione rallentano aumento di T e P: accelerazione collasso
 Quando la zona interna raggiunge l'equilibrio l'esterno continua a contrarsi: rimbalzi.
 
 \end{wordonframe}
+
+\section{T tauri stars: young optically visible stars $M_*\leq2\msun$ (palla stealher 635)}
+
+\begin{frame}{T-Tauri main chars}
+\begin{columns}\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item Proximity to molecular clouds
+\item Youth: excess emission - photospheric radiation beyond that found in MS stars of same $T_e$
+\end{itemize}
+\end{column}\begin{column}{0.5\textwidth}
+
+\end{column}\end{columns}
+
+\end{frame}
+
