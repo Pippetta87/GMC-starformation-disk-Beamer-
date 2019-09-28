@@ -19,24 +19,25 @@ $\ln{\rho}+\phi/c_s^2$ spatial constant: spherical case
 \end{frame}
  
 \begin{frame}{Stability of isothermal poly}
+\begin{columns}[T]\begin{column}{0.5\textwidth}
 \keyword{Gravitational stability using polytropes}:
 \begin{align*}
 &\frac{1}{r^2}\TDof{r}(r^2\TDy{r}{\phi})=4\pi G\rho=4\pi G\rho_c\exp{-\phi/c_s^2}\\
 &\frac{1}{\xi^2}\TDof{\xi}(\xi^2\TDy{\xi}{\psi})=\exp{-\psi}\\
-&\xi=\sqrt{\frac{4\pi G\rho_c}{c_s^2}}r,\ \psi=\frac{\phi}{c_s^2}\\
-&M=4\pi\int_0^{r_0}\rho r^2\,dr=4\pi\rho_c(\frac{c_s^2}{4\pi G\rho_c})\expy{3/2}\int_0^{\xi_0}\exp{-\psi}\xi^2\,d\xi\\
+&\xi=\sqrt{\frac{4\pi G\rho_c}{c_s^2}}r,\ \psi=\frac{\phi}{c_s^2}
+\end{align*}
+\end{column}\begin{column}{0.5\textwidth}
+\begin{align*}
+&M=4\pi\int_0^{r_0}\rho r^2\,dr\\
+&=4\pi\rho_c(\frac{c_s^2}{4\pi G\rho_c})\expy{3/2}\int_0^{\xi_0}\exp{-\psi}\xi^2\,d\xi\\
 &m=\frac{P_0\expy{1/2}G\expy{3/2}M}{c_s^4}=(4\pi\frac{\rho_c}{\rho_0})\expy{-1/2}(\xi^2\PDy{\xi}{\psi})_{\xi_0}
 \end{align*}
-
-\begin{figure}[!ht]
-\begin{subfigure}[b]{0.47\textwidth}
-\centering
-\includegraphics[trim={0cm 0cm 0 0},clip, keepaspectratio,width=0.99\textwidth]{polyadimprofile}\label{fig:polyadimprofile} \end{subfigure}
-~
-\begin{subfigure}[b]{0.47\textwidth} \centering
-\includegraphics[trim={0cm 0 0 0},clip,width=0.99\textwidth]{polyadimmassvsdcontr}\label{fig:polyadimmassvsdcontr}
-\end{subfigure} \end{figure} 
-
+\end{column}\end{columns}
+\begin{figure}
+\includegraphics[trim={0cm 0cm 0 0},clip, keepaspectratio,width=0.45\textwidth]{polyadimprofile}
+\includegraphics[trim={0cm 0 0 0},clip,width=0.45\textwidth]{polyadimmassvsdcontr}
+\end{figure}
+\end{frame}
 
 \begin{wordonframe}{Radius as function of external pressure}
 For small $\xi$ $\psi(\xi)\approx\frac{\xi^2}{6}+O(\xi^4)$:
